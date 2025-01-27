@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/componentes/Banner/Banner.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1737572562775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737573234189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import './Banner.css'\r\n \r\n-const Banner = () => {\r\n+export const Banner = () => {\r\n   return (\r\n     <header className=\"banner\">\r\n       <img src=\"/imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n     </header>\r\n"
+                },
+                {
+                    "date": 1737632697920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n-import './Banner.css'\r\n+import \"./Banner.css\";\r\n \r\n export const Banner = () => {\r\n   return (\r\n     <header className=\"banner\">\r\n-      <img src=\"/imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n+      <img\r\n+        src=\"/imagens/banner.png\"\r\n+        alt=\"O banner principal da página do Organo\"\r\n+      />\r\n     </header>\r\n-  )\r\n-}\r\n+  );\r\n+};\r\n"
+                }
+            ],
+            "date": 1737572562775,
+            "name": "Commit-0",
+            "content": "import './Banner.css'\r\n\r\nconst Banner = () => {\r\n  return (\r\n    <header className=\"banner\">\r\n      <img src=\"/imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n    </header>\r\n  )\r\n}\r\n"
+        }
+    ]
+}

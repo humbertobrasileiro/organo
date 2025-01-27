@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/componentes/CampoTexto/CampoTexto.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1737572769141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737572946950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,11 @@\n .campo-texto label {\r\n   display: block;\r\n   margin-bottom: 8px;\r\n   font-size: 24px;\r\n+}\r\n+\r\n+.campo-texto input {\r\n+  background-color: #FFF;\r\n+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.0);\r\n+  width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737573007335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,8 @@\n .campo-texto input {\r\n   background-color: #FFF;\r\n   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.0);\r\n   width: 100%;\r\n+  border: none;\r\n+  font-size: 24px;\r\n+  padding: 24px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737573038095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,6 @@\n   width: 100%;\r\n   border: none;\r\n   font-size: 24px;\r\n   padding: 24px;\r\n+  box-sizing: border-box;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737573435110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\r\n \r\n .campo-texto input {\r\n   background-color: #FFF;\r\n-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.0);\r\n+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);\r\n   width: 100%;\r\n   border: none;\r\n   font-size: 24px;\r\n   padding: 24px;\r\n"
+                }
+            ],
+            "date": 1737572769141,
+            "name": "Commit-0",
+            "content": ".campo-texto {\r\n  margin: 24px 0;\r\n}\r\n\r\n.campo-texto label {\r\n  display: block;\r\n  margin-bottom: 8px;\r\n  font-size: 24px;\r\n}"
+        }
+    ]
+}

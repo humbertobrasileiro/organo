@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/componentes/Formulario/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1737631949749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737631983780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import CampoTexto from '../CampoTexto'\r\n import './Formulario.css'\r\n \r\n const Formulario = () => {\r\n   <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\r\n"
+                },
+                {
+                    "date": 1737632034112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,16 @@\n import CampoTexto from '../CampoTexto'\r\n import './Formulario.css'\r\n \r\n const Formulario = () => {\r\n-  <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\r\n-  <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\"/>\r\n-  <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\"/>\r\n+  return (\r\n+    <section>\r\n+      <form>\r\n+      <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\r\n+      <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\"/>\r\n+      <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\"/>\r\n+      </form>\r\n+    </section>\r\n+  )\r\n }\r\n \r\n export default Formulario\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737632039744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n const Formulario = () => {\r\n   return (\r\n     <section>\r\n       <form>\r\n-      <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\r\n-      <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\"/>\r\n-      <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\"/>\r\n+        <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\r\n+        <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\"/>\r\n+        <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\"/>\r\n       </form>\r\n     </section>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1737632170376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import './Formulario.css'\r\n \r\n const Formulario = () => {\r\n   return (\r\n-    <section>\r\n+    <section className=\"\">\r\n       <form>\r\n         <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\r\n         <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\"/>\r\n         <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\"/>\r\n"
+                },
+                {
+                    "date": 1737632187783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import './Formulario.css'\r\n \r\n const Formulario = () => {\r\n   return (\r\n-    <section className=\"\">\r\n+    <section className=\"formulario\">\r\n       <form>\r\n         <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\r\n         <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\"/>\r\n         <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\"/>\r\n"
+                },
+                {
+                    "date": 1737632676894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,16 @@\n-import CampoTexto from '../CampoTexto'\r\n-import './Formulario.css'\r\n+import CampoTexto from \"../CampoTexto\";\r\n+import \"./Formulario.css\";\r\n \r\n const Formulario = () => {\r\n   return (\r\n     <section className=\"formulario\">\r\n       <form>\r\n-        <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\r\n-        <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\"/>\r\n-        <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\"/>\r\n+        <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\" />\r\n+        <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\" />\r\n+        <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\" />\r\n       </form>\r\n\\ No newline at end of file\n     </section>\r\n-  )\r\n-}\r\n+  );\r\n+};\r\n \r\n-export default Formulario\n+export default Formulario;\r\n"
+                },
+                {
+                    "date": 1737632992547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n const Formulario = () => {\r\n   return (\r\n     <section className=\"formulario\">\r\n       <form>\r\n+        <h2>Preencha os dados para criar o card do colaborador</h2>\r\n         <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\" />\r\n         <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\" />\r\n         <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\" />\r\n       </form>\r\n"
+                }
+            ],
+            "date": 1737631949749,
+            "name": "Commit-0",
+            "content": "import './Formulario.css'\r\n\r\nconst Formulario = () => {\r\n  <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\r\n  <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\"/>\r\n  <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\"/>\r\n}\r\n\r\nexport default Formulario"
+        }
+    ]
+}

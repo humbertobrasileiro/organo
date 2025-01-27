@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1737553777690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737571114453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,27 +1,11 @@\n-import logo from './logo.svg';\n-import './App.css';\n import Banner from './componentes/Banner/Banner.';\n \n function App() {\n   return (\n     <div className=\"App\">\n       <Banner />\n-      <header className=\"App-header\">\n-        <img src={logo} className=\"App-logo\" alt=\"logo\" />\n-        <p>\n-          Edit <code>src/App.js</code> and save to reload.\n-        </p>\n-        <a\n-          className=\"App-link\"\n-          href=\"https://reactjs.org\"\n-          target=\"_blank\"\n-          rel=\"noopener noreferrer\"\n-        >\n-          Learn React\n-        </a>\n-      </header>\n-    </div>\n+  </div>\n   );\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1737572162185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n import Banner from './componentes/Banner/Banner.';\n+import CampoTexto from './componentes/CampoTexto/CampoTexto';\n \n function App() {\n   return (\n     <div className=\"App\">\n       <Banner />\n+      <CampoTexto />\n   </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1737572339799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-import Banner from './componentes/Banner/Banner.';\n-import CampoTexto from './componentes/CampoTexto/CampoTexto';\n+import Banner from './componentes/Banner/Banner';\n+import CampoTexto from './componentes/CampoTexto';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1737572378510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Banner from './componentes/Banner/Banner';\n+import Banner from './componentes/Banner/Banner.js';\n import CampoTexto from './componentes/CampoTexto';\n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1737572414545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Banner from './componentes/Banner/Banner.js';\n+import Banner from './componentes/Banner';\n import CampoTexto from './componentes/CampoTexto';\n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1737573386604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n   return (\n     <div className=\"App\">\n       <Banner />\n       <CampoTexto />\n+      <CampoTexto />\n+      <CampoTexto />\n   </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1737631205962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n function App() {\n   return (\n     <div className=\"App\">\n       <Banner />\n-      <CampoTexto />\n-      <CampoTexto />\n-      <CampoTexto />\n+      <CampoTexto label=\"Nome\"/>\n+      <CampoTexto label=\"Cargo\"/>\n+      <CampoTexto label=\"Imagem\"/>\n   </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1737631457056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n function App() {\n   return (\n     <div className=\"App\">\n       <Banner />\n-      <CampoTexto label=\"Nome\"/>\n-      <CampoTexto label=\"Cargo\"/>\n-      <CampoTexto label=\"Imagem\"/>\n+      <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\n+      <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\"/>\n+      <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\"/>\n   </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1737631969868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,10 @@\n import Banner from './componentes/Banner';\n-import CampoTexto from './componentes/CampoTexto';\n \n function App() {\n   return (\n     <div className=\"App\">\n       <Banner />\n-      <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\"/>\n-      <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\"/>\n-      <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\"/>\n   </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1737632061995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n import Banner from './componentes/Banner';\n+import Formulario from './componentes/Formulario';\n \n function App() {\n   return (\n     <div className=\"App\">\n       <Banner />\n+      <Formulario />\n   </div>\n   );\n }\n \n"
+                }
+            ],
+            "date": 1737553777690,
+            "name": "Commit-0",
+            "content": "import logo from './logo.svg';\nimport './App.css';\nimport Banner from './componentes/Banner/Banner.';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n      <Banner />\n      <header className=\"App-header\">\n        <img src={logo} className=\"App-logo\" alt=\"logo\" />\n        <p>\n          Edit <code>src/App.js</code> and save to reload.\n        </p>\n        <a\n          className=\"App-link\"\n          href=\"https://reactjs.org\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Learn React\n        </a>\n      </header>\n    </div>\n  );\n}\n\nexport default App;\n"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/componentes/Banner/Banner.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1737554106820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737554428701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n .banner {\r\n-  background-color: ;\r\n+  background-color: #627BF7;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737554453753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n .banner {\r\n-  background-color: #627BF7;\r\n+  background-color: #6278F7;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737554481208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,8 @@\n .banner {\r\n   background-color: #6278F7;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.banner img {\r\n+  max-width: 100%;\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1737554106820,
+            "name": "Commit-0",
+            "content": ".banner {\r\n  background-color: ;\r\n}"
+        }
+    ]
+}

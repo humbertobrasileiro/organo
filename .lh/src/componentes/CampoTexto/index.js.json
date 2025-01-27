@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/componentes/CampoTexto/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1737572830172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737572860030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const CampoTexto = () => {\r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label htmlFor=\"\">Nome</label>\r\n-      <input type=\"text\" />\r\n+      <input type=\"text\" placeholder=\"Digite o seu nome\" />\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1737573253310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const CampoTexto = () => {\r\n   return (\r\n     <div className=\"campo-texto\">\r\n-      <label htmlFor=\"\">Nome</label>\r\n+      <label>Nome</label>\r\n       <input type=\"text\" placeholder=\"Digite o seu nome\" />\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1737631066994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import './CampoTexto.css'\r\n \r\n-const CampoTexto = () => {\r\n+const CampoTexto = (props) => {\r\n+  console.log(props)\r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label>Nome</label>\r\n       <input type=\"text\" placeholder=\"Digite o seu nome\" />\r\n"
+                },
+                {
+                    "date": 1737631295557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,10 @@\n import './CampoTexto.css'\r\n \r\n const CampoTexto = (props) => {\r\n-  console.log(props)\r\n   return (\r\n     <div className=\"campo-texto\">\r\n-      <label>Nome</label>\r\n+      <label>{props.label}</label>\r\n       <input type=\"text\" placeholder=\"Digite o seu nome\" />\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1737631382576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const CampoTexto = (props) => {\r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label>{props.label}</label>\r\n-      <input type=\"text\" placeholder=\"Digite o seu nome\" />\r\n+      <input type=\"text\" placeholder={props.placeholder} />\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1737631580799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,13 @@\n import './CampoTexto.css'\r\n \r\n const CampoTexto = (props) => {\r\n+  const placeholderModificado = `${props.placeholder}...`\r\n+\r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label>{props.label}</label>\r\n-      <input type=\"text\" placeholder={props.placeholder} />\r\n+      <input type=\"text\" placeholder={placeholderModificado} />\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1737632081910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n import './CampoTexto.css'\r\n \r\n const CampoTexto = (props) => {\r\n   const placeholderModificado = `${props.placeholder}...`\r\n-\r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label>{props.label}</label>\r\n       <input type=\"text\" placeholder={placeholderModificado} />\r\n"
+                },
+                {
+                    "date": 1737632706816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n-import './CampoTexto.css'\r\n+import \"./CampoTexto.css\";\r\n \r\n const CampoTexto = (props) => {\r\n-  const placeholderModificado = `${props.placeholder}...`\r\n+  const placeholderModificado = `${props.placeholder}...`;\r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label>{props.label}</label>\r\n       <input type=\"text\" placeholder={placeholderModificado} />\r\n     </div>\r\n-  )\r\n-}\r\n\\ No newline at end of file\n+  );\r\n+};\r\n \r\n-export default CampoTexto\n+export default CampoTexto;\r\n"
+                }
+            ],
+            "date": 1737572830172,
+            "name": "Commit-0",
+            "content": "import './CampoTexto.css'\r\n\r\nconst CampoTexto = () => {\r\n  return (\r\n    <div className=\"campo-texto\">\r\n      <label htmlFor=\"\">Nome</label>\r\n      <input type=\"text\" />\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default CampoTexto"
+        }
+    ]
+}

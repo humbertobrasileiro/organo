@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/componentes/Banner/Banner..js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1737553560551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737553672972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function Banner() {\r\n   return (\r\n-    <img src=\"/imagens/banner.png\" />>\r\n+    <img src=\"/imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n   )\r\n }\r\n \r\n export default Banner\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737553879221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function Banner() {\r\n   return (\r\n-    <img src=\"/imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n+    <img src=\"./imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n   )\r\n }\r\n \r\n export default Banner\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737553945042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function Banner() {\r\n   return (\r\n-    <img src=\"./imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n+    <img src=\"/imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n   )\r\n }\r\n \r\n export default Banner\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737554102421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,11 @@\n+import './Banner.css'\r\n+\r\n function Banner() {\r\n   return (\r\n-    <img src=\"/imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n+    <header className=\"banner\">\r\n+      <img src=\"/imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n+    </header>\r\n   )\r\n }\r\n \r\n export default Banner\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1737553560551,
+            "name": "Commit-0",
+            "content": "function Banner() {\r\n  return (\r\n    <img src=\"/imagens/banner.png\" />>\r\n  )\r\n}\r\n\r\nexport default Banner"
+        }
+    ]
+}
