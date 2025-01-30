@@ -28,13 +28,9 @@ const Formulario = () => {
           label="Nome"
           placeholder="Digite seu nome"
         />
-        <CampoTexto
-          obrigatorio={true}
-          label="Cargo"
-          placeholder="Digite seu cargo"
-        />
+        <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
         <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem" />
-        <ListaSuspensa obrigatorio={true} label="Time" itens={times} />
+        <ListaSuspensa label="Time" itens={times} />
         <Botao>Criar card</Botao>
       </form>
     </section>

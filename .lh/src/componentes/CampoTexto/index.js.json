@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1737572830172,
@@ -40,6 +40,22 @@
                 {
                     "date": 1737632706816,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n-import './CampoTexto.css'\r\n+import \"./CampoTexto.css\";\r\n \r\n const CampoTexto = (props) => {\r\n-  const placeholderModificado = `${props.placeholder}...`\r\n+  const placeholderModificado = `${props.placeholder}...`;\r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label>{props.label}</label>\r\n       <input type=\"text\" placeholder={placeholderModificado} />\r\n     </div>\r\n-  )\r\n-}\r\n\\ No newline at end of file\n+  );\r\n+};\r\n \r\n-export default CampoTexto\n+export default CampoTexto;\r\n"
+                },
+                {
+                    "date": 1738077459715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   const placeholderModificado = `${props.placeholder}...`;\r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label>{props.label}</label>\r\n-      <input type=\"text\" placeholder={placeholderModificado} />\r\n+      <input required={props.obrigatorio} placeholder={placeholderModificado} />\r\n     </div>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1738078147113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   const placeholderModificado = `${props.placeholder}...`;\r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label>{props.label}</label>\r\n-      <input required={props.obrigatorio} placeholder={placeholderModificado} />\r\n+      <input required={true} placeholder={placeholderModificado} />\r\n     </div>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1738078240902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   const placeholderModificado = `${props.placeholder}...`;\r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label>{props.label}</label>\r\n-      <input required={true} placeholder={placeholderModificado} />\r\n+      <input required={props.obrigatorio} placeholder={placeholderModificado} />\r\n     </div>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1738242831802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,17 @@\n import \"./CampoTexto.css\";\r\n \r\n const CampoTexto = (props) => {\r\n   const placeholderModificado = `${props.placeholder}...`;\r\n+\r\n+  const aoDigitado = (evento) => {\r\n+    console.log(evento.target.value)\r\n+  }\r\n+  \r\n   return (\r\n     <div className=\"campo-texto\">\r\n       <label>{props.label}</label>\r\n-      <input required={props.obrigatorio} placeholder={placeholderModificado} />\r\n+      <input onChange={aoDigitado} required={props.obrigatorio} placeholder={placeholderModificado} />\r\n     </div>\r\n   );\r\n };\r\n \r\n"
                 }
             ],
             "date": 1737572830172,

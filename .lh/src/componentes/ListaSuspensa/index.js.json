@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/componentes/ListaSuspensa/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1737983611882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737983977980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <div>\r\n       <label>{props.label}</label>\r\n       <select>\r\n         {props.itens.map((item) => {\r\n-          return <option>{item}</option>;\r\n+          return <option key={item}>{item}</option>;\r\n         })}\r\n       </select>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1737986505307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import \"./ListaSuspensa.css\";\r\n \r\n const ListaSuspensa = (props) => {\r\n   return (\r\n-    <div>\r\n+    <div className=\"lista-suspensa\">\r\n       <label>{props.label}</label>\r\n       <select>\r\n         {props.itens.map((item) => {\r\n           return <option key={item}>{item}</option>;\r\n"
+                },
+                {
+                    "date": 1738078078942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const ListaSuspensa = (props) => {\r\n   return (\r\n     <div className=\"lista-suspensa\">\r\n       <label>{props.label}</label>\r\n-      <select>\r\n+      <select required={props.required}>\r\n         {props.itens.map((item) => {\r\n           return <option key={item}>{item}</option>;\r\n         })}\r\n       </select>\r\n"
+                }
+            ],
+            "date": 1737983611882,
+            "name": "Commit-0",
+            "content": "import \"./ListaSuspensa.css\";\r\n\r\nconst ListaSuspensa = (props) => {\r\n  return (\r\n    <div>\r\n      <label>{props.label}</label>\r\n      <select>\r\n        {props.itens.map((item) => {\r\n          return <option>{item}</option>;\r\n        })}\r\n      </select>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default ListaSuspensa;\r\n"
+        }
+    ]
+}

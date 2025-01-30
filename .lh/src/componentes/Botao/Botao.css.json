@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/componentes/Botao/Botao.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1738076135203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738076585534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,15 @@\n .botao {\r\n-  background-color: #6275F7;\r\n+  background-color: #6278F7;\r\n   border-radius: 10px;\r\n   font-weight: 700;\r\n   font-size: 18px;\r\n   padding: 32px;\r\n   border: none;\r\n   cursor: pointer;\r\n   color: #FFF;\r\n+  margin: 16px 0;\r\n+}\r\n+\r\n+.botao:hover {\r\n+  color: #95FFD4;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1738076613287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   padding: 32px;\r\n   border: none;\r\n   cursor: pointer;\r\n   color: #FFF;\r\n-  margin: 16px 0;\r\n+  margin: 32px 0;\r\n }\r\n \r\n .botao:hover {\r\n   color: #95FFD4;\r\n"
+                }
+            ],
+            "date": 1738076135203,
+            "name": "Commit-0",
+            "content": ".botao {\r\n  background-color: #6275F7;\r\n  border-radius: 10px;\r\n  font-weight: 700;\r\n  font-size: 18px;\r\n  padding: 32px;\r\n  border: none;\r\n  cursor: pointer;\r\n  color: #FFF;\r\n}"
+        }
+    ]
+}

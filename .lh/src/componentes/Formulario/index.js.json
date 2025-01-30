@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1737631949749,
@@ -36,6 +36,34 @@
                 {
                     "date": 1737632992547,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n const Formulario = () => {\r\n   return (\r\n     <section className=\"formulario\">\r\n       <form>\r\n+        <h2>Preencha os dados para criar o card do colaborador</h2>\r\n         <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\" />\r\n         <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\" />\r\n         <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\" />\r\n       </form>\r\n"
+                },
+                {
+                    "date": 1737983973930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,29 @@\n import CampoTexto from \"../CampoTexto\";\r\n+import ListaSuspensa from \"/ListaSuspensa\";\r\n import \"./Formulario.css\";\r\n \r\n const Formulario = () => {\r\n+  const times = [\r\n+    \"Programação\",\r\n+    \"Front-End\",\r\n+    \"Data Science\",\r\n+    \"Devops\",\r\n+    \"UX e Design\",\r\n+    \"Mobile\",\r\n+    \"Inovação e Gestão\",\r\n+  ];\r\n+\r\n   return (\r\n     <section className=\"formulario\">\r\n\\ No newline at end of file\n       <form>\r\n         <h2>Preencha os dados para criar o card do colaborador</h2>\r\n         <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\" />\r\n         <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\" />\r\n         <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\" />\r\n+        <ListaSuspensa itens={times} />\r\n       </form>\r\n     </section>\r\n   );\r\n };\r\n \r\n-export default Formulario;\n+export default Formulario;\r\n"
+                },
+                {
+                    "date": 1737984123663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import CampoTexto from \"../CampoTexto\";\r\n-import ListaSuspensa from \"/ListaSuspensa\";\r\n+import ListaSuspensa from \"../ListaSuspensa\";\r\n import \"./Formulario.css\";\r\n \r\n const Formulario = () => {\r\n   const times = [\r\n@@ -25,5 +25,5 @@\n     </section>\r\n   );\r\n };\r\n \r\n-export default Formulario;\n\\ No newline at end of file\n+export default Formulario;\r\n"
+                },
+                {
+                    "date": 1737986545872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <h2>Preencha os dados para criar o card do colaborador</h2>\r\n         <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\" />\r\n         <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\" />\r\n         <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\" />\r\n-        <ListaSuspensa itens={times} />\r\n+        <ListaSuspensa label=\"Time\" itens={times} />\r\n       </form>\r\n     </section>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738075975950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import Botao from '../Botao';\r\n import CampoTexto from \"../CampoTexto\";\r\n import ListaSuspensa from \"../ListaSuspensa\";\r\n import \"./Formulario.css\";\r\n \r\n@@ -20,8 +21,9 @@\n         <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\" />\r\n         <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\" />\r\n         <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\" />\r\n         <ListaSuspensa label=\"Time\" itens={times} />\r\n+        <Botao />\r\n       </form>\r\n     </section>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738076257546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\" />\r\n         <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\" />\r\n         <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\" />\r\n         <ListaSuspensa label=\"Time\" itens={times} />\r\n-        <Botao />\r\n+        <Botao label=\"Criar card\"/>\r\n       </form>\r\n     </section>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738076356087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\" />\r\n         <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\" />\r\n         <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\" />\r\n         <ListaSuspensa label=\"Time\" itens={times} />\r\n-        <Botao label=\"Criar card\" />\r\n+        <Botao texto=\"Criar card\" />\r\n       </form>\r\n     </section>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738076709367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,11 @@\n         <CampoTexto label=\"Nome\" placeholder=\"Digite seu nome\" />\r\n         <CampoTexto label=\"Cargo\" placeholder=\"Digite seu cargo\" />\r\n         <CampoTexto label=\"Imagem\" placeholder=\"Digite o endereço da imagem\" />\r\n         <ListaSuspensa label=\"Time\" itens={times} />\r\n-        <Botao texto=\"Criar card\" />\r\n+        <Botao>\r\n+          Criar card\r\n+        </Botao>\r\n       </form>\r\n     </section>\r\n   );\r\n };\r\n"
                 }
             ],
             "date": 1737631949749,

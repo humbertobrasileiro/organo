@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/componentes/ListaSuspensa/ListaSuspensa.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1737986598546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737986858113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,15 @@\n .lista-suspensa label {\r\n   display: block;\r\n   margin-bottom: 8px;\r\n   font-size: 24px;\r\n+}\r\n+\r\n+.lista-suspensa select {\r\n+  background-color: #FFF;\r\n+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);\r\n+  width: 100%;\r\n+  border: none;\r\n+  font-size: 24px;\r\n+  padding: 24px;\r\n+  box-sizing: border-box;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1737986921848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n-.lista-suspensa {}\r\n+.lista-suspensa {\r\n+  margin: 24px 0;\r\n+}\r\n \r\n .lista-suspensa label {\r\n   display: block;\r\n   margin-bottom: 8px;\r\n"
+                },
+                {
+                    "date": 1737986953826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,4 @@\n-.lista-suspensa {\r\n-  margin: 24px 0;\r\n-}\r\n-\r\n .lista-suspensa label {\r\n   display: block;\r\n   margin-bottom: 8px;\r\n   font-size: 24px;\r\n"
+                }
+            ],
+            "date": 1737986598546,
+            "name": "Commit-0",
+            "content": ".lista-suspensa {}\r\n\r\n.lista-suspensa label {\r\n  display: block;\r\n  margin-bottom: 8px;\r\n  font-size: 24px;\r\n}"
+        }
+    ]
+}
