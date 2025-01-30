@@ -3,8 +3,11 @@ import "./CampoTexto.css";
 const CampoTexto = (props) => {
   const placeholderModificado = `${props.placeholder}...`;
 
+  let valor = "";
+
   const aoDigitado = (evento) => {
-    console.log(evento.target.value);
+    valor = evento.target.value;
+    console.log(valor);
   };
 
   return (
