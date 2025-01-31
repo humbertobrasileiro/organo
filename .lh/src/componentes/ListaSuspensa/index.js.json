@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1737983611882,
@@ -20,6 +20,14 @@
                 {
                     "date": 1738078078942,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const ListaSuspensa = (props) => {\r\n   return (\r\n     <div className=\"lista-suspensa\">\r\n       <label>{props.label}</label>\r\n-      <select>\r\n+      <select required={props.required}>\r\n         {props.itens.map((item) => {\r\n           return <option key={item}>{item}</option>;\r\n         })}\r\n       </select>\r\n"
+                },
+                {
+                    "date": 1738247643072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n       <label>{props.label}</label>\r\n       <select\r\n         onChange={(evento) => props.aoAlterado(evento.target.value)}\r\n         required={props.required}\r\n+        value={props.value}\r\n       >\r\n         {props.itens.map((item) => {\r\n           return <option key={item}>{item}</option>;\r\n         })}\r\n"
+                },
+                {
+                    "date": 1738247861230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       <label>{props.label}</label>\r\n       <select\r\n         onChange={(evento) => props.aoAlterado(evento.target.value)}\r\n         required={props.required}\r\n-        value={props.value}\r\n+        value={props.valor}\r\n       >\r\n         {props.itens.map((item) => {\r\n           return <option key={item}>{item}</option>;\r\n         })}\r\n"
                 }
             ],
             "date": 1737983611882,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 10,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1737553777690,
@@ -48,6 +48,18 @@
                 {
                     "date": 1737632061995,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n import Banner from './componentes/Banner';\n+import Formulario from './componentes/Formulario';\n \n function App() {\n   return (\n     <div className=\"App\">\n       <Banner />\n+      <Formulario />\n   </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1738248232936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,20 @@\n+import { useState } from 'react';\n import Banner from './componentes/Banner';\n import Formulario from './componentes/Formulario';\n \n function App() {\n+\n+  const [colaboradores, setColaboradores] = useState([]);\n+\n+  const aoNovoColaboradorAdicionado = (colaborador) => {\n+    console.log(colaborador);\n+  }\n+\n   return (\n     <div className=\"App\">\n       <Banner />\n-      <Formulario />\n+      <Formulario aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>\n   </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1738248389343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     <div className=\"App\">\n       <Banner />\n       <Formulario\n         aoColaboradorCadastrado={(colaborador) =>\n-          aoNovoColaboradorAdicionado(colaborador)\n+          aoNovoColaboradorAdicionado(colaboradores)\n         }\n       />\n     </div>\n   );\n"
+                },
+                {
+                    "date": 1738248449203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n   const [colaboradores, setColaboradores] = useState([]);\n \n   const aoNovoColaboradorAdicionado = (colaborador) => {\n     console.log(colaborador);\n+    setColaboradores([...colaboradores, colaborador]);\n   };\n \n   return (\n     <div className=\"App\">\n"
                 }
             ],
             "date": 1737553777690,
