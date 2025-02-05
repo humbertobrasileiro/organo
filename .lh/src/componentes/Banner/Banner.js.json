@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1737572562775,
@@ -16,6 +16,18 @@
                 {
                     "date": 1737632697920,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n-import './Banner.css'\r\n+import \"./Banner.css\";\r\n \r\n export const Banner = () => {\r\n   return (\r\n     <header className=\"banner\">\r\n-      <img src=\"/imagens/banner.png\" alt=\"O banner principal da página do Organo\" />\r\n+      <img\r\n+        src=\"/imagens/banner.png\"\r\n+        alt=\"O banner principal da página do Organo\"\r\n+      />\r\n     </header>\r\n-  )\r\n-}\r\n+  );\r\n+};\r\n"
+                },
+                {
+                    "date": 1738760275160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,14 @@\n import \"./Banner.css\";\r\n \r\n export const Banner = () => {\r\n   return (\r\n+    <>\r\n     <header className=\"banner\">\r\n       <img\r\n         src=\"/imagens/banner.png\"\r\n         alt=\"O banner principal da página do Organo\"\r\n       />\r\n     </header>\r\n+    </>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738760296971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n import \"./Banner.css\";\r\n \r\n export const Banner = () => {\r\n   return (\r\n-    <>\r\n+    <fragment>\r\n       <header className=\"banner\">\r\n         <img\r\n           src=\"/imagens/banner.png\"\r\n           alt=\"O banner principal da página do Organo\"\r\n         />\r\n       </header>\r\n-    </>\r\n+    </fragment>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738760485003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,15 @@\n+import { Fragment } from 'react';\r\n import \"./Banner.css\";\r\n \r\n export const Banner = () => {\r\n   return (\r\n-    <fragment>\r\n+    <Fragment\r\n       <header className=\"banner\">\r\n         <img\r\n           src=\"/imagens/banner.png\"\r\n           alt=\"O banner principal da página do Organo\"\r\n         />\r\n       </header>\r\n-    </fragment>\r\n+    </Fragment>\r\n   );\r\n };\r\n"
                 }
             ],
             "date": 1737572562775,
